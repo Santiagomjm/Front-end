@@ -1,0 +1,48 @@
+.row{
+    padding:10px;
+}
+
+div{
+    background-color:azure;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 10px;
+} 
+
+.titulo1{
+    font-size: 25px;
+}
+
+.sobreMi {
+    text-align: left;
+}
+/* Estilos */
+#nombre {
+    font-weight: bold;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+@media (min-width: 576px){
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px black;
+        left: 3%;
+        top:300px;
+    }
+}
+    
+@media (max-width: 575px){
+        #fotoperfil{
+            position: absolute;
+            width: 30%;
+            border-radius: 100%;
+            box-shadow: 3px 3px 3px black;
+            left: 35%;
+            top:300px;
+        }
+}
