@@ -19,6 +19,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
 
 
 
@@ -44,12 +45,15 @@ import { FormBuilder } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule
+    
 
     
  
 
 ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
