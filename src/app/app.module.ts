@@ -20,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 
@@ -36,7 +38,9 @@ import { interceptorProvider } from './service/interceptor-service';
     ProyectosComponent,
     FooterComponent,
     PortfolioComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
