@@ -1,6 +1,11 @@
 <div class="row">
+    
+        <button type="button" class="btn btn-success" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar Persona
+        </button>
+   
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src="../../../assets/fotoperfil.png" class="img-fluid" id="fotoperfil">
+            <img src="{{persona.img}}" class="img-fluid" id="fotoperfil">
         </div >
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
@@ -9,18 +14,8 @@
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <span>
-            <h1>Acerca de mí</h1>
-
         
-            <p class="titulo1"> Apasionado por la tecnología y el autoaprendizaje</p>
-                
-        <div class="sobreMi">
-               <p> Soy capaz de trabajar en equipo, de forma proactiva, aprendiendo rápidamente de mis compañeros y colegas a fin de cumplir con mis responsabilidades.</p>
-                
-
-            <p> Actualmente estoy cursando Argentina Programa, y aunque todavía tengo mucho por aprender, estoy preparado para nuevos desafios, ya que me darán nuevas herramientas para resolver los problemas del mundo moderno mediante el desarrollo de software</p>
+            <p> {{persona.descripcion}} </p>
         </div>
-        </span>
+   
    </div>
-</div>

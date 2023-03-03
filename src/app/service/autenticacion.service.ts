@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AutenticacionService {
-  url="http://localhost:4200/iniciar-sesion";
+  URL= environment.URL + 'iniciar-sesion/';
   currentUserSubject: BehaviorSubject<any>;
 
 
@@ -18,7 +19,7 @@ export class AutenticacionService {
 
   IniciarSesion(credenciales:any):Observable<any>
   {
-    return this.http.post(this.url, credenciales).pipe(map(data=>{
+    return this.http.post(this.URL, credenciales).pipe(map(data=>{
       sessionStorage.setItem('currentUser', JSON.stringify(data));
 
       return data;
