@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  URL=  'https://back-end-q2ov.onrender.com/explab/';
+  URL=  'https://test3-c5or.onrender.com/explab/';
  //URL = environment.URL + 'explab/';//
   constructor(private httpClient: HttpClient) { }
 

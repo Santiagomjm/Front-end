@@ -11,7 +11,7 @@ import { persona } from '../model/persona.mode';
 
 
 export class PersonaService {
-  URL = 'https://back-end-q2ov.onrender.com/personas/';
+  URL = 'https://test3-c5or.onrender.com/';
   //URL = environment.URL + 'personas/';//
 
   constructor(private httpClient: HttpClient) { }

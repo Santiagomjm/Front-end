@@ -5,8 +5,6 @@
 export const environment = {
   production: false,
 
-  URL: 'https://back-end-q2ov.onrender.com/',
-
 };
 
 /*

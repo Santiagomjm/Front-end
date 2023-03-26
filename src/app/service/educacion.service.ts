@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionService {
 
-  URL= 'https://back-end-q2ov.onrender.com/educacion/';
+  URL= 'https://test3-c5or.onrender.com/';
   //URL = environment.URL + 'educacion/';//
 
   constructor(private httpClient : HttpClient) { }

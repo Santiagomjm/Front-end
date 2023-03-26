@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://back-end-q2ov.onrender.com/skill/';
+  URL = 'https://test3-c5or.onrender.com/skill/';
   //URL = environment.URL + 'skill/';//
 
   constructor(private httpClient: HttpClient) { }

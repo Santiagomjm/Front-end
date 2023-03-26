@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
- authURL = 'https://back-end-q2ov.onrender.com/auth/';
+ authURL = 'https://test3-c5or.onrender.com/';
 
  //URL = environment.URL + 'auth/';//
 
